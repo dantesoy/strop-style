@@ -1,0 +1,106 @@
+.container {
+	margin: 0 auto;
+	width: 95%;
+}
+
+.text-title {
+	font-size: px-to-rems(32);
+}
+
+.text-big {
+	font-size: px-to-rems(48);
+}
+
+
+.title-separation {
+	padding: px-to-rems(24) 0;
+}
+
+.text-small {
+	font-size: px-to-rems(12);
+}
+
+.subtitle-separation {
+	padding: px-to-rems(6) 0;
+}
+
+.is-wrap {
+	flex-wrap: wrap;
+}
+
+.is-around{
+	justify-content: space-around;
+}
+
+.card-title {
+	font-size: px-to-rems(24);
+}
+
+.separation-left + .separation-left {
+	margin-left: px-to-rems(10);
+}
+
+.separation-left:nth-child(5) {
+		margin-left: 0;
+}
+
+.card-separation {
+	margin-top: px-to-rems(10);
+}
+
+.body-separation {
+	padding: px-to-rems(28) 0;
+}
+
+.form-med {
+	width: 50%;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  overflow: auto;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.box-footer {
+	border-top: px-to-rems(1) solid $color-field;
+	padding: px-to-rems(16) 0;
+}
+
+.text-secondary {
+	color: $color-field;
+}
+
+.text-primary {
+	color: $color-primary;
+}
+
+.text-light {
+	color: $color-light;
+}
+
+.text-third {
+	color: $color-form-border;
+}
+
+.text-sidebar {
+	font-size: px-to-rems(14);
+}
+
+.footer {
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $color-footer;
+    color: $color-light;
+    padding: px-to-rems(22) 0 px-to-rems(10) 0;
+    z-index: 2;
+}

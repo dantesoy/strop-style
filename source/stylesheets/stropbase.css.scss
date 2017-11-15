@@ -1,0 +1,16 @@
+@import "scss/base";
+@import "variables";
+@import "forms";
+@import "buttons";
+@import "main";
+@import "navbar";
+@import "pages/new-workspace";
+@import "pages/login";
+@import "pages/question-view";
+@import "pages/loading-screen";
+@import "pages/question-index";
+
+
+strong {
+  font-weight: 700;
+}

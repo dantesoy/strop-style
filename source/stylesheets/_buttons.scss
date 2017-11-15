@@ -1,0 +1,35 @@
+.button {
+  color: $color-light;
+  padding: px-to-rems(8);
+
+  &-pill {
+    border-radius: px-to-rems(50);
+  }
+  
+  &-primary {
+    background: $color-primary;
+  }
+
+  &-dark {
+    background: $color-sidebar-button;
+  }
+
+  &-ghost {
+  	    border: px-to-rems(1) solid $color-primary;
+    	border-radius: px-to-rems(100);
+    	color: $color-black;
+    	padding: px-to-rems(2);
+  }
+
+  &-big {
+  	padding: px-to-rems(8) px-to-rems(10);
+  }
+
+    &-no-width {
+    width: auto;
+  }
+
+  &-med {
+  	width: 40%;
+  }
+}

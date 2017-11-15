@@ -1,0 +1,73 @@
+.login-form {
+  background-color: rgba($color-light,.5);
+  border-radius: px-to-rems(3);
+  padding: px-to-rems(20);
+  
+  input {
+    border: 1px solid $color-form-border;
+    border-radius: px-to-rems(3);
+    color: $color-field;
+    padding: px-to-rems(8);
+    width: 100%;
+  }
+}
+
+.card {
+  background: $color-field;
+  border: px-to-rems(1) solid $color-card-border;
+  border-radius: px-to-rems(5);
+  height: px-to-rems(200);
+  padding: px-to-rems(18);
+  position: relative;
+}
+
+.card-bottom {
+  border-bottom: px-to-rems(5) solid $color-primary;
+}
+
+.card-down {
+  bottom: px-to-rems(18);
+  position: absolute;
+}
+
+.card-length {
+  width: 24%;
+}
+
+.form-select {
+  appearance: none;
+  background: transparent;
+  background: url(/images/arrow-down.svg) no-repeat 98% 50%;
+  border: px-to-rems(1) solid $color-card-border;
+  border-radius: px-to-rems(4);
+  font-size: px-to-rems(16);
+  overflow: hidden;
+  padding: px-to-rems(8) px-to-rems(4);
+  width: 95%;
+}
+
+.color-box {
+  border: px-to-rems(1) solid $color-field;
+  border-radius: px-to-rems(4);
+  height: px-to-rems(80);
+  width: px-to-rems(80);
+}
+
+.color-sample {
+  background: $color-primary;
+  border-radius: px-to-rems(4);
+  height: 92%;
+  margin: px-to-rems(3);
+
+  &.second-color {
+    background: $color-field;
+  }
+
+  &.third-color {
+    background:$color-form-border;
+  }
+
+  &.fourth-color {
+    background: $color-fourth;
+  }
+}

@@ -1,0 +1,38 @@
+<svg width="16" height="17" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-2353 -1220)">
+<g id="Group">
+<g id="Shape">
+<use xlink:href="#path0_fill" transform="translate(2353 1220.58)"/>
+</g>
+<g id="Shape Copy 2">
+<use xlink:href="#path0_fill" transform="translate(2353 1226.03)"/>
+</g>
+<g id="Shape Copy">
+<use xlink:href="#path0_fill" transform="translate(2358.62 1220.58)"/>
+</g>
+<g id="Shape Copy 6">
+<use xlink:href="#path0_fill" transform="translate(2364.07 1220.58)"/>
+</g>
+<g id="Shape Copy 3">
+<use xlink:href="#path0_fill" transform="translate(2358.62 1226.03)"/>
+</g>
+<g id="Shape Copy 7">
+<use xlink:href="#path0_fill" transform="translate(2364.07 1226.03)"/>
+</g>
+<g id="Shape Copy 5">
+<use xlink:href="#path0_fill" transform="translate(2353 1231.48)"/>
+</g>
+<g id="Shape Copy 4">
+<use xlink:href="#path0_fill" transform="translate(2358.62 1231.48)"/>
+</g>
+<g id="Shape Copy 8">
+<use xlink:href="#path0_fill" transform="translate(2364.07 1231.48)"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0.559082 0L 4.02808 0C 4.33667 0 4.58691 0.250244 4.58691 0.55896L 4.58691 4.02808C 4.58691 4.33679 4.33667 4.58704 4.02808 4.58704L 0.559082 4.58704C 0.250244 4.58704 0 4.33679 0 4.02808L 0 0.55896C 0 0.250244 0.250244 0 0.559082 0ZM 1.11792 3.46899L 3.46899 3.46899L 3.46899 1.11792L 1.11792 1.11792L 1.11792 3.46899Z"/>
+</defs>
+</svg>

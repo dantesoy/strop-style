@@ -1,0 +1,39 @@
+.side-bar {
+	background: $color-form-border;
+	min-height:100%;
+	padding: px-to-rems(16) 0;
+	width: 18%;
+	z-index: 1;
+}
+
+.img-button {
+	vertical-align: text-top;
+}
+
+.question-index {
+	padding-bottom: px-to-rems(80);
+	width: 100%;
+}
+
+.is-vend {
+	align-items: flex-end;
+}
+
+.question-card {
+	border: px-to-rems(1) solid $color-field;
+	border-radius: px-to-rems(4);
+	height: px-to-rems(170);
+	padding: px-to-rems(8) 0;
+}
+
+.more-info {
+	display: none;
+}
+
+.question-container {
+	width: 24%;
+
+	:hover .more-info {
+		display: block;
+	}
+}

@@ -1,0 +1,30 @@
+.login-background {
+  background-image: url("/images/login-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.title-text {
+  font-size: px-to-rems(32);
+}
+
+.light-color {
+  color: $color-light;
+}
+
+.regular-text {
+  font-size: px-to-rems(16);
+}
+
+.sub-text {
+  font-size: px-to-rems(14);
+}
+
+.separation-top + .separation-top {
+  margin-top: px-to-rems(24);
+
+  &.small {
+    margin-top: px-to-rems(10);
+  }
+}

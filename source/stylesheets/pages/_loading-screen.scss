@@ -1,0 +1,14 @@
+.loading-body {
+	background: $color-light;
+	height: px-to-rems(580);
+}
+
+.text-loading {
+	color: $color-form-border;
+}
+
+.loading-separator {
+	border-bottom: px-to-rems(2) solid $color-field;
+	height: px-to-rems(2);
+	width: 20%;
+}

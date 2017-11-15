@@ -1,0 +1,28 @@
+.workspace-body {
+	background: $color-workspace-bg;
+	height: 100vh;
+}
+
+.workspace-content {
+	background: $color-light;
+}
+
+.workspace-title {
+	border-bottom: px-to-rems(1) solid $color-field;
+	padding: px-to-rems(12) 0;
+}
+
+.border-title {
+	border-bottom: px-to-rems(2) solid $color-primary;
+}
+
+.workspace-separation {
+	padding-top: px-to-rems(16);
+}
+
+.preview-box {
+	border: px-to-rems(1) solid $color-field;
+	border-radius: px-to-rems(4);
+	padding: px-to-rems(6);
+	width: 42%;
+}

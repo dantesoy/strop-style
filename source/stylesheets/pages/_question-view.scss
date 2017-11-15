@@ -1,0 +1,40 @@
+.question-nav {
+	border-bottom: px-to-rems(1) solid $color-field;
+	padding: px-to-rems(24);
+}
+
+.img-question {
+	vertical-align: text-bottom;
+}
+
+.question-box {
+	background: $color-primary;
+	height: px-to-rems(15);
+	width: px-to-rems(15);
+
+  	&.second-color {
+    	background: $color-field;
+  	}
+
+  	&.third-color {
+    	background:$color-form-border;
+  	}
+
+  	&.fourth-color {
+    	background: $color-fourth;
+    }
+
+    &.fifth-color {
+    	background: $color-footer;
+    }
+
+    &.sixt-color {
+    	background: $color-workspace-bg;
+    }
+}
+
+.graph-preview {
+	border: px-to-rems(1) solid $color-field;
+	border-radius: px-to-rems(4);
+	padding: px-to-rems(20);
+}
