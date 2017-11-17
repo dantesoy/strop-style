@@ -1,14 +1,10 @@
 .side-bar {
 	background: $color-form-border;
 	min-height:100%;
-	padding: px-to-rems(16) 0;
 	position: fixed;
 	width: 18%;
 	z-index: 1;
-
-	strong {
-		
-	}
+	transition: 0.4s;
 }
 
 .img-button {

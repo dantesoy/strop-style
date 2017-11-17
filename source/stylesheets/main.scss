@@ -58,8 +58,9 @@
 
 body {
   min-height: 100vh;
-  position: relative;
   overflow: auto;
+  position: relative;
+  transition: .5s;
 }
 
 .relative {

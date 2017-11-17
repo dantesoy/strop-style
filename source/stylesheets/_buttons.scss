@@ -18,6 +18,11 @@
     background: $color-dark;
   }
 
+  &-save-segment {
+    background: $color-light;
+    color: $color-sidebar-button;
+  }
+
   &-ghost {
   	border: px-to-rems(1) solid $color-primary;
     border-radius: px-to-rems(100);
