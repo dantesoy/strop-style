@@ -2,8 +2,13 @@
 	background: $color-form-border;
 	min-height:100%;
 	padding: px-to-rems(16) 0;
+	position: fixed;
 	width: 18%;
 	z-index: 1;
+
+	strong {
+		
+	}
 }
 
 .img-button {
@@ -11,6 +16,7 @@
 }
 
 .question-index {
+	margin-left: 18%;
 	padding-bottom: px-to-rems(80);
 	width: 100%;
 }

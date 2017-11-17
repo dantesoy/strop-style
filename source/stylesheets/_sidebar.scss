@@ -1,0 +1,19 @@
+.is-hidden {
+	display: none;
+}
+
+.sidebar-subcontainer {
+	border-bottom: px-to-rems(1) solid $color-sidebar-button;
+	padding-bottom: px-to-rems(16);
+	width: 80%;
+}
+
+.sidebar-separation {
+  padding-left: 2%;
+}
+
+.create-segment-container {
+	background: $color-sidebar-segment;
+	border-radius: px-to-rems(3);
+	padding: px-to-rems(14) 0;
+}

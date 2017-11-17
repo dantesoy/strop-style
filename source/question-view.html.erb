@@ -1,9 +1,101 @@
 <div class="align-flex">
-	<div class="side-bar text-center text-sidebar ">
-		<strong class="text-light separation-top workspace-separation">Custon Segments</strong>
-		<a href="" class="button button-pill button-dark separation-top">
-			<!-- <img class="img-button" src="images/add-question.svg"> -->
+	<div class="side-bar text-sidebar" id="mySidenav">
+		<div class="container align-flex horizontal is-column" id="sidebarContainer">
+			<div class="separation-top align-flex between" id="sidebarSubcontainer">
+				<strong class="text-light workspace-separation">Custon Segments</strong>
+				<!-- <img src="images/close-add-segment.svg" class="is-hidden" id="visible-open" onclick="closeNav()"> -->
+				<%= image_tag "close-add-segment.svg", class:'is-hidden', id:'visible-open', onclick: 'closeNav()'%>
+			</div>
+			<a class="button button-pill button-dark separation-top" onclick="openNav()" id="sidebarButton">
+			<!-- <img class="img-button" src="images/add-question.svg" id="segment-open"> -->
 			<%= image_tag "add-question.svg", class:'img-button' %> Add new segment</a>
+			<div class="separation-top is-hidden create-segment-container" id="is-visible">
+				<div class="container">
+					<div class="align-flex between vertical">
+						<strong class="text-light">Name your new segment</strong>
+						<a href="" class="button button-ghost button-big button-light text-small">Delete this segment</a>
+					</div>
+					<p class="text-light separation-top"> Create segment by:</p>
+					<div class="row separation-top small">
+						<div class="col-4">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>Select a question</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-3 sidebar-separation">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>equals</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-4 sidebar-separation">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>Select an answer</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-1 sidebar-separation">
+							<!-- <img src="images/remove-segment.svg"> -->
+							<%= image_tag "remove-segment.svg"%>
+						</div>
+					</div>
+					<div class="row separation-top small">
+						<div class="col-2">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>and</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+					</div>
+					<div class="row separation-top small">
+						<div class="col-4">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>Select a question</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-3 sidebar-separation">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>equals</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-4 sidebar-separation">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>Select an answer</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-1 sidebar-separation">
+							<!-- <img src="images/remove-segment.svg"> -->
+							<%= image_tag "remove-segment.svg"%>
+						</div>
+					</div>
+					<a href="" class="separation-top small button button-ghost button-light button-big">Add new criteria</a>
+				</div>
+				<div class="">
+					<div class="container align-flex between">
+						<a href="">Cancel</a>
+						<a href="" class="button button-pill button-dark">Save segment</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="question-index">
 		<div class="question-nav separation-top">
@@ -16,7 +108,7 @@
 					<!-- <img src="images/question-group.svg" class="img-question"> -->
 					<%= image_tag "question-group.svg", class:'img-question' %>
 					 Back to All Questions</strong>
-				<strong>Next Question 
+				<strong>Next Question
 					<!-- <img src="images/right-arrow.svg"> -->
 					<%= image_tag "right-arrow.svg"%>
 				</strong>
@@ -28,7 +120,7 @@
 					<p class="card-title separation-top">Wich of the following best describes you as a real estate professional? Select one response.</p>
 					<div class="separation-top text-sidebar">
 						<div class="align-flex separation-top small">
-							<div class="question-box separation-left"></div> 
+							<div class="question-box separation-left"></div>
 							<p class="separation-left"> Individual:  I work independently</p>
 						</div>
 						<div class="align-flex separation-top small">
@@ -37,7 +129,7 @@
 						</div>
 						<div class="align-flex separation-top small">
 							<div class="question-box third-color separation-left"></div>
-							<p class="separation-left">Team Leader: I lead a team</p>	
+							<p class="separation-left">Team Leader: I lead a team</p>
 						</div>
 						<div class="align-flex separation-top small">
 							<div class="question-box fourth-color separation-left"></div>

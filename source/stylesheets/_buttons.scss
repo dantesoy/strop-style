@@ -14,11 +14,20 @@
     background: $color-sidebar-button;
   }
 
+  &-segment {
+    background: $color-dark;
+  }
+
   &-ghost {
-  	    border: px-to-rems(1) solid $color-primary;
-    	border-radius: px-to-rems(100);
-    	color: $color-black;
-    	padding: px-to-rems(2);
+  	border: px-to-rems(1) solid $color-primary;
+    border-radius: px-to-rems(100);
+    color: $color-black;
+    padding: px-to-rems(2);
+  }
+
+  &-light {
+    border-color: $color-light;
+    color: $color-light;
   }
 
   &-big {

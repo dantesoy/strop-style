@@ -44,6 +44,16 @@
   overflow: hidden;
   padding: px-to-rems(8) px-to-rems(4);
   width: 95%;
+
+  &-sidebar {
+    background: url(/images/arrow-down-sidebar.svg) no-repeat 98% 50%;
+    background-color: $color-light;
+    border: 0;
+  }
+
+  &-full {
+    width: 100%;
+  }
 }
 
 .color-box {
@@ -71,3 +81,4 @@
     background: $color-fourth;
   }
 }
+
