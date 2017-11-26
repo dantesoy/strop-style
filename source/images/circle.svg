@@ -1,0 +1,14 @@
+<svg width="25" height="25" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>115-circle</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-10549 -1440)">
+<g id="115-circle">
+<g id="Shape">
+<use xlink:href="#path0_fill" transform="translate(10549.4 1440.67)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 12 0C 15.2051 0 18.2188 1.24829 20.4854 3.51477C 22.752 5.78113 24 8.79468 24 12C 24 15.2053 22.752 18.2188 20.4854 20.4852C 18.2188 22.7517 15.2051 24 12 24C 8.79492 24 5.78125 22.7517 3.51465 20.4852C 1.24805 18.2188 0 15.2053 0 12C 0 8.79468 1.24805 5.78113 3.51465 3.51477C 5.78125 1.24829 8.79492 0 12 0ZM 1.93848 12C 1.93848 17.5477 6.45215 22.061 12 22.061C 17.5469 22.061 22.0605 17.5477 22.0605 12C 22.0605 6.45239 17.5469 1.93896 12 1.93896C 6.45215 1.93896 1.93848 6.45239 1.93848 12Z"/>
+</defs>
+</svg>

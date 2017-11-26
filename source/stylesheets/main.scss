@@ -3,6 +3,10 @@
 	width: 95%;
 }
 
+.container-body {
+	margin-top: px-to-rems(36);
+}
+
 .text-title {
 	font-size: px-to-rems(32);
 }
@@ -96,12 +100,3 @@ body {
 	font-size: px-to-rems(14);
 }
 
-.footer {
-	position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: $color-footer;
-    color: $color-light;
-    padding: px-to-rems(22) 0 px-to-rems(10) 0;
-    z-index: 2;
-}

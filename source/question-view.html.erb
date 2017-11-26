@@ -1,6 +1,6 @@
 <div class="align-flex">
 	<div class="side-bar text-sidebar" id="mySidenav">
-<!-- 		<div class="warning is-hidden" id="warning">
+	<!--<div class="warning is-hidden" id="warning">
 			<div class="align-flex between container">
 				<div class="align-flex between vertical">
 					<%= image_tag "warning-icon.svg", class: 'separation-left' %>
@@ -114,8 +114,98 @@
 			<div class="segment-edit separation-top segment-view-small" id="segment-view">
 				<div class="container align-flex between text-light">
 					<strong>Women earing more than 100k</strong>
-					<%= image_tag "arrow-down-segment.svg" %>
+					<%= image_tag "arrow-down-segment.svg", id: "seg1-arrowdown", onclick:'arrowDown()' %>
+					<%= image_tag "arrow-up-segment.svg", class: 'is-hidden', id: "seg1-arrowup", onclick:'arrowUp()' %>
 				</div>
+				<div class="is-hidden create-segment-container" id="is-visible2">
+				<div class="container separation-top">
+					<div class="align-flex between vertical separation-top small">
+						<div>
+							<%= image_tag "sidebar-edit.svg", class:'img-button' %>
+							<input type="text" name="" placeholder="Name your new segment" class="segment-title">
+						</div>
+						<a href="" class="button button-ghost button-big button-light text-small">Delete this segment</a>
+					</div>
+					<p class="text-light separation-top"> Create segment by:</p>
+					<div class="row separation-top small">
+						<div class="col-4">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>Select a question</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-3 sidebar-separation">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>equals</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-4 sidebar-separation">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>Select an answer</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-1 sidebar-separation">
+							<!-- <img src="images/remove-segment.svg"> -->
+							<%= image_tag "remove-segment.svg"%>
+						</div>
+					</div>
+					<div class="row separation-top small">
+						<div class="col-2">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>and</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+					</div>
+					<div class="row separation-top small">
+						<div class="col-4">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>Select a question</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-3 sidebar-separation">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>equals</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-4 sidebar-separation">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>Select an answer</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-1 sidebar-separation">
+							<!-- <img src="images/remove-segment.svg"> -->
+							<%= image_tag "remove-segment.svg"%>
+						</div>
+					</div>
+					<a href="" class="separation-top small button button-ghost button-light button-big">Add new criteria</a>
+				</div>
+				<div class="create-segment-footer separation-top">
+					<div class="container align-flex between vertical text-light">
+						<a href="">Cancel</a>
+						<a href="" class="button button-pill button-dark button-save-segment">Save segment</a>
+					</div>
+				</div>
+			</div>
 			</div>
 		</div>
 	</div>
@@ -253,10 +343,39 @@
 		</div>
 	</div>
 </div>
-<div class="footer">
-	<div class="container align-flex between">
-		<p><strong>Export Queue</strong> (empty)</p>
-		<!-- <img src="images/arrowwhite-up.svg"> -->
-		<%= image_tag "arrowwhite-up.svg"%>
+<div class="footer-overlay">
+	<div class="footer-container">
+		<div class="footer footer-notification">
+			<div class="container align-flex between">
+				<p><%= image_tag "added-icon.svg" %> added <strong>Question name</strong> as <strong>Type of Chart</strong> to thesse  queue</p>
+				<%= image_tag "footer-close.svg" %>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container align-flex between">
+				<p><strong>Export Queue</strong> (empty)</p>
+				<!-- <img src="images/arrowwhite-up.svg"> -->
+				<%= image_tag "arrowwhite-up.svg"%>
+			</div>
+		</div>
+		<div class="footer-notification">
+			<div class="container text-light">
+				<!-- <img src="circle.svg"> -->
+				<a><%= image_tag "circle.svg", class: "img-footer"%> Select all</a>
+				<div class="align-flex">
+					<div class="footer-graph text-small">
+						<!-- <img src="graph-footer"> -->
+						<%= image_tag "graph-footer.svg", class: "footer-box"%>
+						<p>Add graph from the main Question index here to export and use in <strong>Power Point</strong> and or <strong>CSV</strong> format</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container align-flex ">
+				<a href="" class="button button-pill button-primary btn-big">Export all to  CSV</a>
+				<a href="" class="button button-pill button-primary btn-big">Export all to  a Power Point</a>
+			</div>
+		</div>
 	</div>
 </div>

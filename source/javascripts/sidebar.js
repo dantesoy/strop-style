@@ -16,6 +16,7 @@ function closeNav() {
     document.body.style.backgroundColor = "#fff";
     document.getElementById("visible-open").classList.add('is-hidden');
     document.getElementById("is-visible").classList.add('is-hidden');
+    document.getElementById("is-visible2").classList.add('is-hidden');
     document.getElementById("sidebarContainer").classList.add('align-flex');
     document.getElementById("sidebarSubcontainer").classList.remove('sidebar-subcontainer');
     document.getElementById("sidebarButton").classList.add('button-dark');

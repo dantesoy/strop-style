@@ -1,0 +1,41 @@
+.footer {
+    background-color: $color-footer;
+    color: $color-light;
+    padding: px-to-rems(15) 0 px-to-rems(10) 0;
+    height: px-to-rems(45);
+
+    &-notification {
+    	background-color: $color-primary;
+    	padding: px-to-rems(10) 0; 
+    }
+}
+
+.footer-overlay {
+     background:rgba($color-black, .4); 
+     height:100%;
+     left:0; 
+     position:fixed; 
+     top:0; 
+     width:100%; 
+     z-index:3; 
+}
+
+.footer-container {
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+.img-footer {
+    vertical-align: bottom;
+}
+
+.footer-box {
+    height: px-to-rems(140);
+    width: px-to-rems(190);
+}
+
+.footer-graph {
+    width: px-to-rems(190);
+}

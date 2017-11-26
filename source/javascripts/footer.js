@@ -1,0 +1,6 @@
+function openFooter () {
+}
+
+function closeFooter () {
+
+}

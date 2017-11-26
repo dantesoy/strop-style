@@ -10,11 +10,14 @@
     <%= stylesheet_link_tag "stropbase" %>
     <%= javascript_include_tag "site" %>
     <%= javascript_include_tag "sidebar" %>
+    <%= javascript_include_tag "segment-bar" %>
   </head>
   <body>
     <div class="navbar">
       <p class="light-color container"><strong>STROP INSIGHTS</strong> Data Intel Viewer</p>
     </div>
-    <%= yield %>
+    <div class="container-body">
+      <%= yield %>
+    </div>
   </body>
 </html>

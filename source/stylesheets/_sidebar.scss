@@ -1,3 +1,15 @@
+.side-bar {
+	background: $color-form-border;
+	height: 88%;
+	min-height: 88%;
+	overflow-y: auto;
+	position: fixed;
+	top: 6%;
+	transition: 0.4s;
+	width: 18%;
+	z-index: 1;
+}
+
 .is-hidden {
 	display: none;
 }
