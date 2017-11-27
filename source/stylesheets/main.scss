@@ -100,3 +100,8 @@ body {
 	font-size: px-to-rems(14);
 }
 
+.is-hidden {
+	display: none;
+	transition: .5s;
+}
+

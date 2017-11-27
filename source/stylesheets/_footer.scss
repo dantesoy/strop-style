@@ -1,12 +1,17 @@
 .footer {
     background-color: $color-footer;
     color: $color-light;
-    padding: px-to-rems(15) 0 px-to-rems(10) 0;
     height: px-to-rems(45);
+    padding: px-to-rems(15) 0 px-to-rems(10) 0;
 
     &-notification {
-    	background-color: $color-primary;
-    	padding: px-to-rems(10) 0; 
+        background-color: $color-primary;
+        padding: px-to-rems(10) 0;
+        transition: 0.4s;
+    }
+
+    &-new {
+        padding: px-to-rems(6);
     }
 }
 
@@ -21,10 +26,10 @@
 }
 
 .footer-container {
-	bottom: 0;
-	position: fixed;
-	width: 100%;
-	z-index: 10;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 .img-footer {
@@ -32,8 +37,18 @@
 }
 
 .footer-box {
+    background: $color-light;
+    border-radius: px-to-rems(4);
     height: px-to-rems(140);
     width: px-to-rems(190);
+
+    &-selected {
+        background-image: url("/images/graph-checked.svg");
+        background-repeat: no-repeat;
+        border: px-to-rems(5) solid $color-selected;
+        border-radius: px-to-rems(4);
+        padding: 0;
+    }
 }
 
 .footer-graph {

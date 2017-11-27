@@ -355,15 +355,22 @@
 			<div class="container align-flex between">
 				<p><strong>Export Queue</strong> (empty)</p>
 				<!-- <img src="images/arrowwhite-up.svg"> -->
-				<%= image_tag "arrowwhite-up.svg"%>
+				<%= image_tag "arrowwhite-up.svg", onclick: 'openFooter()' , id: 'footer-arrowup'%>
+				<!-- <img src="images/arrowwhite-up.svg" class= "is-hidden" onclick= "closeFooter()"> -->
+				<%= image_tag "footer-arrowdown.svg", onclick: 'closeFooter()', class: 'is-hidden', id: 'footer-arrowdown'%>
 			</div>
 		</div>
-		<div class="footer-notification">
+		<div class="footer-notification is-hidden" id="footer-open">
 			<div class="container text-light">
 				<!-- <img src="circle.svg"> -->
-				<a><%= image_tag "circle.svg", class: "img-footer"%> Select all</a>
-				<div class="align-flex">
-					<div class="footer-graph text-small">
+				<a class="separation-top"><%= image_tag "circle.svg", class: "img-footer"%> Select all</a>
+				<div class="align-flex separation-top small">
+					<div class="footer-graph text-small separation-left" onclick="selectedGraph()">
+						<!-- <img src="graph-footer"> -->
+						<%= image_tag "graph-footer.svg", class: "footer-box", id: 'footer-select'%>
+						<p>Add graph from the main Question index here to export and use in <strong>Power Point</strong> and or <strong>CSV</strong> format</p>
+					</div>
+					<div class="footer-graph text-small separation-left">
 						<!-- <img src="graph-footer"> -->
 						<%= image_tag "graph-footer.svg", class: "footer-box"%>
 						<p>Add graph from the main Question index here to export and use in <strong>Power Point</strong> and or <strong>CSV</strong> format</p>
@@ -371,10 +378,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer">
-			<div class="container align-flex ">
-				<a href="" class="button button-pill button-primary btn-big">Export all to  CSV</a>
-				<a href="" class="button button-pill button-primary btn-big">Export all to  a Power Point</a>
+		<div class="footer footer-new is-hidden" id="footer-open2">
+			<div class="container align-flex vertical end">
+				<a href="" class="button button-pill button-primary btn-big separation-left">Export all to  CSV</a>
+				<a href="" class="button button-pill button-primary btn-big separation-left">Export all to  a Power Point</a>
 			</div>
 		</div>
 	</div>
