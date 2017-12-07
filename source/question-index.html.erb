@@ -1,10 +1,213 @@
 <div class="align-flex">
-	<div class="side-bar text-center text-sidebar ">
-		<strong class="text-light separation-top workspace-separation">Custon Segments</strong>
-		<a href="" class="button button-pill button-dark separation-top">
-			<!-- <img class="img-button" src="images/add-question.svg"> -->
-			<%= image_tag "add-question.svg", class:'img-button' %>
-			 Add new segment</a>
+	<div class="side-bar text-sidebar" id="mySidenav">
+		<!--<div class="warning is-hidden" id="warning">
+			<div class="align-flex between container">
+				<div class="align-flex between vertical">
+					<%= image_tag "warning-icon.svg", class: 'separation-left' %>
+					<p class="separation-left">Are you sure you want to delete this segment?</p>
+				</div>
+				<div class="align-flex between vertical">
+					<a href="" class="separation-left button button-pill button-save-segment">I'm sure, delete it</a>
+					<p class="separation-left">Nevermind</p>
+					<%= image_tag "warning-close-icon.svg", class:'separation-left' %>
+				</div>
+			</div>
+		</div> -->
+		<div class="container align-flex horizontal is-column" id="sidebarContainer">
+			<div class="separation-top align-flex between" id="sidebarSubcontainer">
+				<strong class="text-light workspace-separation">Custon Segments</strong>
+				<!-- <img src="images/close-add-segment.svg" class="is-hidden" id="visible-open" onclick="closeNav()"> -->
+				<%= image_tag "close-add-segment.svg", class:'is-hidden', id:'visible-open', onclick: 'closeNav()'%>
+			</div>
+			<a class="button button-pill button-dark separation-top" onclick="openNav()" id="sidebarButton">
+			<!-- <img class="img-button" src="images/add-question.svg" id="segment-open"> -->
+			<%= image_tag "add-question.svg", class:'img-button' %> Add new segment</a>
+			<div class="separation-top is-hidden create-segment-container" id="is-visible">
+				<div class="container separation-top">
+					<div class="align-flex between vertical separation-top small">
+						<div>
+							<%= image_tag "sidebar-edit.svg", class:'img-button' %>
+							<input type="text" name="" placeholder="Name your new segment" class="segment-title">
+						</div>
+						<a href="" class="button button-ghost button-big button-light text-small">Delete this segment</a>
+					</div>
+					<p class="text-light separation-top"> Create segment by:</p>
+					<div class="row separation-top small">
+						<div class="col-4">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>Select a question</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-3 sidebar-separation">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>equals</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-4 sidebar-separation">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>Select an answer</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-1 sidebar-separation">
+							<!-- <img src="images/remove-segment.svg"> -->
+							<%= image_tag "remove-segment.svg"%>
+						</div>
+					</div>
+					<div class="row separation-top small">
+						<div class="col-2">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>and</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+					</div>
+					<div class="row separation-top small">
+						<div class="col-4">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>Select a question</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-3 sidebar-separation">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>equals</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-4 sidebar-separation">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>Select an answer</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-1 sidebar-separation">
+							<!-- <img src="images/remove-segment.svg"> -->
+							<%= image_tag "remove-segment.svg"%>
+						</div>
+					</div>
+					<a href="" class="separation-top small button button-ghost button-light button-big">Add new criteria</a>
+				</div>
+				<div class="create-segment-footer separation-top">
+					<div class="container align-flex between vertical text-light">
+						<a href="">Cancel</a>
+						<a href="" class="button button-pill button-dark button-save-segment">Save segment</a>
+					</div>
+				</div>
+			</div>
+			<div class="segment-edit separation-top segment-view-small" id="segment-view">
+				<div class="container align-flex between text-light">
+					<strong>Women earing more than 100k</strong>
+					<%= image_tag "arrow-down-segment.svg", id: "seg1-arrowdown", onclick:'arrowDown()' %>
+					<%= image_tag "arrow-up-segment.svg", class: 'is-hidden', id: "seg1-arrowup", onclick:'arrowUp()' %>
+				</div>
+				<div class="is-hidden create-segment-container" id="is-visible2">
+				<div class="container separation-top">
+					<div class="align-flex between vertical separation-top small">
+						<div>
+							<%= image_tag "sidebar-edit.svg", class:'img-button' %>
+							<input type="text" name="" placeholder="Name your new segment" class="segment-title">
+						</div>
+						<a href="" class="button button-ghost button-big button-light text-small">Delete this segment</a>
+					</div>
+					<p class="text-light separation-top"> Create segment by:</p>
+					<div class="row separation-top small">
+						<div class="col-4">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>Select a question</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-3 sidebar-separation">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>equals</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-4 sidebar-separation">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>Select an answer</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-1 sidebar-separation">
+							<!-- <img src="images/remove-segment.svg"> -->
+							<%= image_tag "remove-segment.svg"%>
+						</div>
+					</div>
+					<div class="row separation-top small">
+						<div class="col-2">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>and</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+					</div>
+					<div class="row separation-top small">
+						<div class="col-4">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>Select a question</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-3 sidebar-separation">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>equals</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-4 sidebar-separation">
+							<select class="form-select form-select-sidebar form-select-full">
+								<option>Select an answer</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</div>
+						<div class="col-1 sidebar-separation">
+							<!-- <img src="images/remove-segment.svg"> -->
+							<%= image_tag "remove-segment.svg"%>
+						</div>
+					</div>
+					<a href="" class="separation-top small button button-ghost button-light button-big">Add new criteria</a>
+				</div>
+				<div class="create-segment-footer separation-top">
+					<div class="container align-flex between vertical text-light">
+						<a href="">Cancel</a>
+						<a href="" class="button button-pill button-dark button-save-segment">Save segment</a>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
 	</div>
 	<div class="question-index">
 		<div class="container body-separation">
@@ -110,10 +313,40 @@
 		</div>
 	</div>
 </div>
-<div class="footer">
-	<div class="container align-flex between">
-		<p><strong>Export Queue</strong> (empty)</p>
-		<!-- <img src="images/arrowwhite-up.svg"> -->
-		<%= image_tag "arrowwhite-up.svg"%>
+<div class="" id="overlay">
+	<div class="footer-container">
+		<div class="footer">
+			<div class="container align-flex between">
+				<p><strong>Export Queue</strong> (empty)</p>
+				<!-- <img src="images/arrowwhite-up.svg"> -->
+				<%= image_tag "arrowwhite-up.svg", onclick: 'openFooter()' , id: 'footer-arrowup'%>
+				<!-- <img src="images/arrowwhite-up.svg" class= "is-hidden" onclick= "closeFooter()"> -->
+				<%= image_tag "footer-arrowdown.svg", onclick: 'closeFooter()', class: 'is-hidden', id: 'footer-arrowdown'%>
+			</div>
+		</div>
+		<div class="footer-notification is-hidden" id="footer-open">
+			<div class="container text-light">
+				<!-- <img src="circle.svg"> -->
+				<a class="separation-top"><%= image_tag "circle.svg", class: "img-footer"%> Select all</a>
+				<div class="align-flex separation-top small">
+					<div class="footer-graph text-small separation-left" onclick="selectedGraph()">
+						<!-- <img src="graph-footer"> -->
+						<%= image_tag "graph-footer.svg", class: "footer-box", id: 'footer-select'%>
+						<p>Add graph from the main Question index here to export and use in <strong>Power Point</strong> and or <strong>CSV</strong> format</p>
+					</div>
+					<div class="footer-graph text-small separation-left">
+						<!-- <img src="graph-footer"> -->
+						<%= image_tag "graph-footer.svg", class: "footer-box"%>
+						<p>Add graph from the main Question index here to export and use in <strong>Power Point</strong> and or <strong>CSV</strong> format</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer footer-new is-hidden" id="footer-open2">
+			<div class="container align-flex vertical end">
+				<a href="" class="button button-pill button-primary btn-big separation-left">Export all to  CSV</a>
+				<a href="" class="button button-pill button-primary btn-big separation-left">Export all to  a Power Point</a>
+			</div>
+		</div>
 	</div>
 </div>
